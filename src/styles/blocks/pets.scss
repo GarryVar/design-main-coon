@@ -1,0 +1,53 @@
+.pets__inner {
+  @include mobile-center;
+}
+
+.pets__title {
+  margin-top: 60px;
+  margin-bottom: 35px;
+  font-size: 28px;
+}
+
+.pets__text {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.pets__types {
+  display: flex;
+}
+
+.pets__item {
+  button {
+    padding: 0 20px;
+    width: auto;
+
+    color: rgba($text-color, 0.2);
+    font-size: 18px;
+    font-weight: 500;
+
+    border: none;
+
+    &:hover {
+      color: $text-color;
+    }
+  }
+}
+
+.pets__slider {
+  position: relative;
+}
+
+.pets__slider-control {
+  position: absolute;
+  top: 50%;
+
+  width: auto;
+  border: none;
+
+  transform: translateY(-50%);
+
+  &:last-child {
+    right: 0;
+  }
+}
