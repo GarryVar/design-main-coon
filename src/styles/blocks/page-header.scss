@@ -1,0 +1,36 @@
+.page-header {
+  background-color: $main-dark-brown;
+  background-image: url("../../images/orange-cat-mobile.png"), url("../../images/svg/logo.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right, center 27px;
+}
+
+.page-header__inner {
+  display: flex;
+  justify-content: center;
+
+  min-height: 617px;
+}
+
+.page-header__content {
+  @include mobile-center;
+
+  margin-top: 80px;
+}
+
+.page-header__text {
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.page-header__title {
+  margin-bottom: 25px;
+
+  color: $text-color;
+  line-height: 41.58px;
+  font-size: 36px;
+  font-family: "Yeseva One", "Arial", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}

@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Oswald";
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+  url("../fonts/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+  url("../fonts/oswaldmedium.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: 0;
+  // box-shadow: 0 0 0 1px #288ddb;
+}
+
+body {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  min-width: 320px;
+  min-height: 100vh;
+
+  color: $text-color;
+  line-height: 24px;
+  font-family: "Robot", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+
+  background-color: $main-brown;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+
+  font-family: Yeseva One;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+
+  color: $main-orange;
+  line-height: 19.6px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+
+
+  width: 141px;
+  height: 40px;
+
+  cursor: pointer;
+
+  transition: background-color ease-in 0.2s;
+  background-color: transparent;
+
+  border: 1px solid $main-orange;
+  color: $text-color;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: none;
+
+  clip: rect(0, 0, 0, 0);
+}
+
+.page-index {
+  position: relative;
+}
+
+section {
+  padding-bottom: 60px;
+}
+
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  width: 320px;
+}
+
+/*@media (min-width: $tablet-width) {
+  .container {
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    width: 1300px;
+  }
+}*/
