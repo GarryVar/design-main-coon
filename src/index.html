@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Первый питомник Мейн-кунов в Новосибирске">
   <link rel="icon" href="favicon.svg" type=" image/svg+xml">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Yeseva+One&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/index.min.css">
-  <title>Design-main-coon</title>
+  <title>Питомник Мейн-кунов</title>
 </head>
 <body>
 
@@ -170,31 +171,22 @@
             <button>Котята</button>
           </li>
         </ul>
-
-        <div class="pets__slider">
-          <button class="pets__slider-control">
-            <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 1L1 10.3333L9 19" stroke="#A07B50"/>
-            </svg>
-          </button>
-
-          <ul class="pets__gallery-list">
-            <li class="pets__gallery-item">
-              <img src="images/cat-item01-mobile.png" alt="Тёмно серый кот">
-            </li>
-
-            <li class="pets__gallery-item"></li>
-            <li class="pets__gallery-item"></li>
-          </ul>
-          <button class="pets__slider-control">
-            <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L9 10.3333L1 19" stroke="#A07B50"/>
-            </svg>
-          </button>
+        <!-- SLIDER -->
+        <div class="slider pets__slider">
+          <div class="slider__inner slider__container">
+            <button type="button" class="slider__button slider__button--prev"></button>
+            <div class="slider__list">
+              <div class="slider__slide">
+                <div class="slider__image">
+                  <img src="images/cat-item01-mobile.png" alt="Тёмно серый кот">
+                </div>
+              </div>
+            </div>
+            <button type="button" class="slider__button slider__button--next"></button>
+          </div>
         </div>
+        <button class="button pets__show-more" class="button">Смотреть больше</button>
       </div>
-
-      <button class="button">Смотреть больше</button>
     </div>
   </section>
 
@@ -312,6 +304,26 @@
           </button>
         </li>
       </ul>
+    </div>
+  </section>
+
+  <section class="team">
+    <div class="team__inner container">
+      <h2 class="title team__title">Наша команда</h2>
+      <p class="team__lead">Вес сотрудники нашего питомника дипломированые специалисты в области фелинологии и ветеринарии</p>
+      <div class="slider team__slider">
+        <div class="slider__inner slider__container">
+          <button type="button" class="slider__button slider__button--prev"></button>
+          <div class="slider__list">
+            <div class="slider__slide">
+              <div class="slider__image">
+                <img src="images/slide01-mobile.png" alt="Тёмно серый кот">
+              </div>
+            </div>
+          </div>
+          <button type="button" class="slider__button slider__button--next"></button>
+        </div>
+      </div>
     </div>
   </section>
 

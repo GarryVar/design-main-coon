@@ -1,0 +1,21 @@
+.slider__inner {
+  display: flex;
+  align-items: center;
+}
+
+.slider__button {
+  width: 20px;
+  border: none;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  &--next {
+    background-image: url("../images/svg/icon-arrow-right.svg");
+  }
+
+  &--prev {
+    background-image: url("../images/svg/icon-arrow-left.svg");
+  }
+}
