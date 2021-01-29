@@ -1,0 +1,10 @@
+.button {
+  width: 141px;
+  height: 40px;
+
+  transition: background-color ease-in 0.2s;
+  background-color: transparent;
+
+  border: 1px solid $main-orange;
+  color: $text-color;
+}

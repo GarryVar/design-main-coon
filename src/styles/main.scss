@@ -100,12 +100,7 @@ button {
   height: 40px;
 
   cursor: pointer;
-
-  transition: background-color ease-in 0.2s;
   background-color: transparent;
-
-  border: 1px solid $main-orange;
-  color: $text-color;
 }
 
 .visually-hidden {
