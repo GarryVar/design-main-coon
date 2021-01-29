@@ -1,0 +1,63 @@
+.care__inner {
+  @include mobile-center;
+
+  min-height: 966px;
+}
+
+.care__title {
+  padding-top: 58px;
+}
+
+.care__header {
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: bold;
+  color: $main-orange;
+}
+
+.care__list {
+  @include mobile-center;
+}
+.care {
+  background-image: url("../images/gray-cat-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.care__item {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+  padding-left: 25.64px;
+
+  min-height: 152px;
+  border: 1px solid $main-orange;
+}
+
+.care__content {
+  padding-top: 25px;
+  padding-bottom: 22px;
+
+  font-size: 14px;
+
+  p {
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+  }
+}
+
+
+.care__header {
+  margin-bottom: 19px;
+}
+
+.care__btn {
+  flex-shrink: 0;
+
+  width: 46px;
+  height: auto;
+
+  background-color: $main-orange;
+  border: none;
+}

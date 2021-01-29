@@ -25,17 +25,15 @@ exports.clean = clean;
 
 // Copy
 const copy = () => {
-    return gulp.src([
-            'src/fonts/**/*.{woff, woff2}',
-            'src/images/**',
-            'src/data/**',
-            'src/scripts/**/*.js',
-            'src/scripts/**/*.json',
-            'src/favicon.svg'
-        ],
-        {base: 'src'}
+  return gulp.src([
+    'src/fonts/**/*.{woff, woff2}',
+    'src/images/**',
+    'src/scripts/**/*.js',
+    'src/favicon.svg'
+  ],
+    {base: 'src'}
     )
-        .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dist'))
 };
 exports.clean = clean;
 
@@ -67,10 +65,10 @@ exports.css = css;
 // Html
 const html = () => {
     return gulp.src('src/*.html')
-        .pipe(htmlmin({
+        /*.pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true
-        }))
+        }))*/
         .pipe(gulp.dest('dist'))
         .pipe(reload({stream: true}))
 };
