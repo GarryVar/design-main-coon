@@ -17,6 +17,12 @@
   display: flex;
 }
 
+.pets__slider {
+  .slider__button {
+    width: 30px;
+  }
+}
+
 .pets__item {
   button {
     padding: 0 20px;
@@ -34,20 +40,7 @@
   }
 }
 
-.pets__slider {
-  position: relative;
-}
-
-.pets__slider-control {
-  position: absolute;
-  top: 50%;
-
-  width: auto;
-  border: none;
-
-  transform: translateY(-50%);
-
-  &:last-child {
-    right: 0;
-  }
+.pets__show-more {
+  display: block;
+  margin: auto;
 }
